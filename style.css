@@ -1,0 +1,151 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: Big-Shoulders-Display;
+  src: url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+  font-weight: 700;
+}
+p{
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+}
+h1{
+  color: hsl(0, 0%, 95%);
+}
+button{
+  border-radius: 40px;
+  border: 2px solid hsl(0, 0%, 95%);
+  color: inherit;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+button:hover{
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  background-color: transparent;
+}
+
+body{
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  font-family: Big-Shoulders-Display;
+}
+ul{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+ul li{
+  list-style: none;
+  padding: 10px;
+  background-color: hsl(184, 100%, 22%); 
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px gray;
+  margin: 10px;
+}
+ul li a{
+  color: hsl(0, 0%, 95%);
+  text-decoration: none;
+  padding: 10px;
+}
+ul li:hover{
+  background-color: hsl(179, 100%, 13%);
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.card-content{
+  width: 250px;
+}
+.card-content img,
+.card-content h1,
+.card-content p,
+.card-content button{
+  margin: 20px;
+}
+#card-1{
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+}
+#card-2{
+  background-color: hsl(184, 100%, 22%);
+}
+#card-3{
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.card-content button{
+  margin-top: 40px;
+}
+
+@media (max-width:375px){
+  @font-face {
+    font-family: Lexend-Deca;
+    src: url(https://fonts.google.com/specimen/Lexend+Deca);
+    font-weight: 400;
+  }
+  body{
+    font-family: Lexend-Deca;
+  }
+  section{
+    flex-direction: column;
+  }
+  ul{
+    justify-content: center;
+  }
+
+}
+
+
+
+/* Grid Stylesheet */
+#grid-body{
+  margin: 50px auto;
+  width: 60vw;
+}
+.item1 {
+  grid-area: header;
+  background-color: orangered;
+}
+.item2 {
+  grid-area: sidebar;
+  background-color: darkorange;
+}
+.item3 {
+  grid-area: main-page;
+  background-color: lightgreen;
+}
+.item4 {
+  grid-area: article1;
+  background-color: #2196F3;
+}
+.item5 {
+  grid-area: article2;
+  background-color: #2196F3
+}
+
+.grid-container {
+  display: grid;
+  grid: 
+  'header header header sidebar'
+  'main-page main-page article1 article1'
+  'main-page main-page article2 article2'
+  ;
+  grid-gap: 10px;
+  background-color: black;
+  padding: 10px;
+}
+.grid-container > div {
+  text-align: center;
+  padding: 50px 10px;
+}
