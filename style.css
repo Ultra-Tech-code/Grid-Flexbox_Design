@@ -31,7 +31,7 @@ button:hover{
 body{
   background-color: hsl(0, 0%, 95%);
   font-size: 15px;
-  font-family: Big-Shoulders-Display;
+  font-family: 'Big-Shoulders-Display', Arial, Helvetica, sans-serif;
 }
 ul{
   display: flex;
@@ -53,6 +53,9 @@ ul li a{
 }
 ul li:hover{
   background-color: hsl(179, 100%, 13%);
+}
+.active{
+  color: orangered;
 }
 
 section{
@@ -95,7 +98,7 @@ section{
     font-weight: 400;
   }
   body{
-    font-family: Lexend-Deca;
+    font-family: 'Lexend-Deca', Arial, Helvetica, sans-serif;
   }
   section{
     flex-direction: column;
@@ -112,6 +115,9 @@ section{
 #grid-body{
   margin: 50px auto;
   width: 60vw;
+}
+#grid-body li a{
+  text-align: center;
 }
 .item1 {
   grid-area: header;
